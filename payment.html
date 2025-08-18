@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <centre>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+</centre>
+
+<body>
+    <centre>
+    <div class="container">
+        <header>
+            <h1>Complete Your Payment</h1>
+            <p>Enter your payment details below to confirm your booking.</p>
+        </header>
+
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="bank">Select Bank:</label>
+                <select id="bank" required>
+                    <option value="" disabled selected>Select your bank</option>
+                    <option value="Bank of America">Bank of America</option>
+                    <option value="Chase Bank">Chase Bank</option>
+                    <option value="Wells Fargo">Wells Fargo</option>
+                    <option value="Citibank">Citibank</option>
+                    <option value="HSBC">HSBC</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cardHolderName">Cardholder's Name:</label>
+                <input type="text" id="cardHolderName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" pattern="\d{16}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="month" id="expiryDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" pattern="\d{3}" required>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+
+        <div id="paymentResult"></div>
+    </div>
+
+    <script src="payment.js"></script>
+</centre>
+</body>
+</html>
+
+

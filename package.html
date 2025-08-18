@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL AGENCY MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="kavi.css">
+    <style>
+        body {
+            background-color: #f3f4f6; /* Light pastel shade */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4A4A4A;
+        }
+        .package-card {
+            background: #faf3e0; /* Pastel shade */
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        .package-card img {
+            width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .package-card:hover {
+            background: #f8e1da;
+        }
+        .package-details {
+            flex-grow: 1;
+        }
+        .btn {
+            background-color: #f39c6b;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #e38854;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Explore Our Exclusive Travel Packages</h1>
+            <p>Select a destination to see the best deals and offers!</p>
+        </header>
+        <div class="package-card">
+            <img src="images/california.jpg" alt="California">
+            <div class="package-details">
+                <h2>California</h2>
+                <p>Enjoy the sun and beaches of California. Special offers available!</p>
+                <button class="btn" onclick="selectDestination('California')">Select Destination</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="images/new-york.jpg" alt="New York">
+            <div class="package-details">
+                <h2>New York</h2>
+                <p>Experience the vibrant city life of New York with exclusive packages.</p>
+                <button class="btn" onclick="selectDestination('New York')">Select Destination</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="images/florida.jpg" alt="Florida">
+            <div class="package-details">
+                <h2>Florida</h2>
+                <p>Discover the magic of Disney and the beautiful beaches of Florida.</p>
+                <button class="btn" onclick="selectDestination('Florida')">Select Destination</button>
+            </div>
+        </div>
+        <div class="package-card">
+            <img src="images/texas.jpg" alt="Texas">
+            <div class="package-details">
+                <h2>Texas</h2>
+                <p>Explore the unique culture and landscapes of Texas. Great offers available!</p>
+                <button class="btn" onclick="selectDestination('Texas')">Select Destination</button>
+            </div>
+        </div>
+        <button class="btn" onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+
+    <script>
+        let selectedDestination = '';
+
+        // Function to select a destination
+        function selectDestination(destination) {
+            selectedDestination = destination;
+            alert(`${destination} selected as your destination.`);
+        }
+
+        // Function to confirm booking and navigate to booking page
+        function confirmBooking() {
+            if (!selectedDestination) {
+                alert('Please select a destination before proceeding.');
+                return;
+            }
+            // Redirect to booking page with selected destination
+            window.location.href = `index.html?destination=${encodeURIComponent(selectedDestination)}`;
+        }
+    </script>
+</body>
+</html>

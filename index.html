@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL AGENCY MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="kavi.css">
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4A4A4A;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .btn {
+            background-color: #f39c6b;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #e38854;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Travel Agency Management System</h1>
+            <p>Book your dream trip with us!</p>
+        </header>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="travelDate">Travel Date:</label>
+                <input type="date" id="travelDate" required>
+            </div>
+            <div class="form-group">
+                <label for="packageType">Package Type:</label>
+                <select id="packageType">
+                    <option value="Standard">Standard</option>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+            <a href="destinnation.html" class="button" type="submit">BOOK NOW</a>
+        </form>
+        <div id="result">
+            <p id="booking-status"></p>
+        </div>
+    </div>
+    <!-- Include the external JavaScript file -->
+    <script src="script.js"></script>
+    <script>
+        // Pre-fill destination if passed in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const destinationParam = urlParams.get('destination');
+        if (destinationParam) {
+            document.getElementById('destination').value = destinationParam;
+        }
+    </script>
+    <script>
+        const bookingForm = document.getElementById('bookingForm');
+      
+        bookingForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+      
+          // Send booking information to server using fetch or Axios
+      
+          // Upon successful submission
+          window.location.href = "destination.html";
+        });
+      </script>
+</body>
+</html>

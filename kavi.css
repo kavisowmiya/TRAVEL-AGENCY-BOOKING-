@@ -1,0 +1,246 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('kaviimg.jpg'); /* Add this line */
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"], 
+input[type="date"], 
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #e6d85b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ccac1a;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  color: #d3ba47;
+  font-size: 18px;
+}
+
+booking-status {
+  font-size: 16px;
+  color: #666;
+}
+/* kavi.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(231, 190, 9, 0.1);
+  padding: 20px;
+  margin-top: 50px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #dec731;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e2db19;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#confirmationDetails {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+#confirmationDetails h2 {
+  margin-top: 0;
+}
+body {
+  background-color: #f3f4f6; /* Light pastel shade */
+  font-family: Arial, sans-serif;
+  color: #f1ee26;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #c4af13;
+}
+
+.btn {
+  background-color: #f39c6b;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e38854;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #e6ce17;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(246, 214, 7, 0.1);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #cdb81b;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0f3f5;
+}
+
+button {
+  background-color: #76b5c5;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ad8e28;
+}
+
+#paymentResult {
+  margin-top: 20px;
+  font-weight: bold;
+}
+

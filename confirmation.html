@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="kavi.css">
+    <style>
+        body {
+            background-color: #f3f4f6; /* Light pastel shade */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4A4A4A;
+        }
+        .details {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background-color: #f39c6b;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #e38854;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Booking Confirmation</h1>
+            <p>Thank you for booking with us!</p>
+        </header>
+        <div id="confirmationDetails" class="details">
+            <!-- Booking details will be displayed here -->
+        </div>
+        <button class="btn" onclick="goBack()">Back to Home</button>
+    </div>
+    <script>
+        // Get query parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const customerName = urlParams.get('customerName');
+        const destination = urlParams.get('destination');
+        const travelDate = urlParams.get('travelDate');
+        const packageType = urlParams.get('packageType');
+
+        // Display booking details
+        document.getElementById('confirmationDetails').innerHTML = `
+            <p><strong>Customer Name:</strong> ${customerName}</p>
+            <p><strong>Destination:</strong> ${destination}</p>
+            <p><strong>Travel Date:</strong> ${travelDate}</p>
+            <p><strong>Package Type:</strong> ${packageType}</p>
+        `;
+
+        // Function to navigate back to home page
+        function goBack() {
+            window.location.href = 'packages.html';
+        }
+    </script>
+</body>
+</html>
+
