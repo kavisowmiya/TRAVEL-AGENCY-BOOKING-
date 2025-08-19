@@ -18,10 +18,6 @@ The Travel Agency Booking System is a simple database-driven project designed to
 
 Frontend: HTML, CSS, JavaScript (or mention your frontend if applicable)
 
-Backend: Python / Java / PHP (depending on your implementation)
-
-Database: MySQL / SQLite (whichever you used)
-
 🎯 Objectives
 
 Provide a user-friendly system for booking travel packages.
